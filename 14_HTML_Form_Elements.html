@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        div{
+            background-color: orange;
+            font-family: "Comic Sans MS", sans-serif;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <form>
+            <label for="username">UserName</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+    <h2>Table Form</h2>
+
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">UserName</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+ </div>
+
+ <div>
+     <form>
+         <label>Select a language</label>
+         <select>
+             <option>HTML</option>
+             <option>CSS</option>
+             <option>JQuery</option>
+             <option>Angular Js</option>
+         </select>
+     </form>
+ </div>
+
+ <div>
+     <form>
+         <label>Enter your message</label>
+         <textarea rows="5" cols="30"></textarea>
+     </form>
+ </div>
+
+<div>
+    <form>
+        <label>Select a language</label>
+        <input list="technologies" name="tech">
+        <datalist id="technologies">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="Angular Js">
+            <option value="JQuery">
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</div>
+
+   
+</body>
+</html>
